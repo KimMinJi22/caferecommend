@@ -1,28 +1,34 @@
+// 페이지 이동
+import { useNavigate } from "react-router-dom";
+
+import PageMove from "../component/PageMovie.jsx";
+import Footer from "../footer/Footer.jsx";
+import Header from "../header/Header.jsx";
+
 import "./Home.css";
 
 export default function Home() {
+    const navigate = useNavigate();
+        
     return(
         // 페이지 전체
         <div className="home-container">
             {/* header */}
-            <div className="home-header">
-                <h1>카페기행(임시)</h1>
-            </div>
+            <Header />
+
             {/* body */}
             <div className="home-body">
                 {/* 지도 이미지 */}
                 <img className="busan-map" />
-                <button>서부권</button>
-                <button>중부권</button>
-                <button>남부권</button>
-                <button>동부권</button>
+                {/* 지역별 버튼 */}
+                <button className="central-btn" onClick={() => PageMove(navigate, "central")}>중부권</button>
+                <button className="eastern-btn" onClick={() => PageMove(navigate, "eastern")}>동부권</button>
+                <button className="southern-btn" onClick={() => PageMove(navigate, "southern")}>남부권</button>
+                <button className="western-btn" onClick={() => PageMove(navigate, "western")}>서부권</button>
             </div>
+
             {/* footer */}
-            <div className="home-footer">
-                <p>카페기행(임시) | 김민지 김대웅 | 발표일자</p>
-                <p>코리아IT아카데미 | 부산 부산진구 중앙대로 668 4층</p>
-                <button>후기</button>
-            </div>
+            <Footer />
         </div>
     );
 }

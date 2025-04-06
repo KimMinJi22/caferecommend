@@ -1,0 +1,10 @@
+/* 헤더 문구 클릭 시 루트로 가게끔... */
+.header button {
+    all: unset; 
+    font-size: 2rem; 
+    font-weight: bold;
+    cursor: pointer; 
+    display: block; 
+    text-align: center; 
+    margin: 10px 0;
+}
