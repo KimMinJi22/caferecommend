@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #FFFDF3;
+}
+
+.home-container{
+  height:max-content;
+}
+
+.home-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  gap: 200px;
+}
+
+.buttons button {
+  position: relative;
+  background-color: transparent;
+  appearance: none;
+  border: none;
+  font-family: 'Cafe24Ssurround';
+  font-size: 24px;
+  transition: all 0.3s ease;
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+.buttons button::after {/* 버튼에 마우스 올릴경우 버튼 밑에 줄이 생기게끔*/
+  content: "";/*내용 없는 밑줄만*/
+  position: absolute;
+  left: 0;
+  bottom: -5px; /*버튼과의 거리*/
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.buttons button:hover {/* 버튼에 마우스 올릴경우 버튼 커지도록*/
+  font-size: 25px; 
+}
+
+.buttons button:hover::after {/* 버튼에 마우스 벗어난 경우 버튼 원상태로*/
+  width: 100%;
+}
+
+.busan-svg-map { /*SVG태그로 설정한 맵 관련 CSS*/
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+.region {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.svg-container {
+  position: relative;
+}
+
+.region-preview-center{ /*각각의 구역마다 마우스 올렸을때 나오는 이미지 관련 CSS 위치 및 z-index 조정으로 안겹치게끔*/
+  position: absolute;
+  top: 290px;
+  left: 780px; 
+  z-index: 1;
+  padding: 6px;
+}
+
+.region-preview-eastern {
+  position: absolute;
+  top: 500px;
+  left: 1300px; 
+  z-index: 1;
+}
+
+.region-preview-western {
+  position: absolute;
+  top: 490px;
+  left: 450px; 
+  z-index: 1;
+}
+
+.region-preview-southern {
+  position: absolute;
+  top: 920px;
+  left: 990px; 
+  z-index: 1;
+}

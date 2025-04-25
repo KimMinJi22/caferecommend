@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.southern-cafe{
+  display:flex;
+  flex-direction: column;
+}
+
+.southern-cafe a{
+  text-decoration: none;
+  color: black;
+}
+
+.southern-part1{
+  display: flex;
+  gap: 30px;
+  margin-left: 0px;
+  align-items: center;
+  font-family: 'Cafe24Ssurround';
+  font-size: 24px;
+  z-index: 2;
+}
+
+.southern-part1 img{
+  width: 330px;
+  height: 330px;
+}
+
+.southern-part2{
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  margin-right: 0px;
+  align-items: center;
+  font-family: 'Cafe24Ssurround';
+  font-size: 24px;
+  z-index: 2;
+}
+
+.southern-part2 img{
+  width: 330px;
+  height: 330px;
+}
+
+.southern-part3{
+  display: flex; 
+  gap: 30px;
+  margin-left: 0px;
+  align-items: center;
+  font-family: 'Cafe24Ssurround';
+  font-size: 24px;
+  z-index: 2;
+}
+
+.southern-part3 img{
+  width: 330px;
+  height: 330px;
+}
+
+.southern-part4{
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  margin-right: 0px;
+  align-items: center;
+  font-family: 'Cafe24Ssurround';
+  font-size: 24px;
+  z-index: 2;
+}
+
+.southern-part4 img{
+  width: 330px;
+  height: 330px;
+}
+
+.dog{
+  margin-left: 400px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.southern-part1 {
+  background: radial-gradient(circle at 30% 30%, #FFFDF3 0%, transparent 95%);
+  padding: 20px;
+  width:88.5% ;
+  padding-left: 0;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.southern-part2 {
+  background: radial-gradient(circle at 70% 20%, #FFFDF3 0%, transparent 95%);
+  padding: 20px;
+  margin-left: 100px;
+  width: 87.5%;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.southern-part3 {
+  background: radial-gradient(circle at 50% 50%, #FFFDF3 0%, transparent 95%);
+  padding: 20px;
+  width:88.5% ;
+  padding-left: 0;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.southern-part4 {
+  background: radial-gradient(circle at 60% 80%, #FFFDF3 0%, transparent 95%);
+  padding: 20px;
+  margin-left: 100px;
+  width: 88.5%;
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.south{
+  position: absolute;
+  z-index: 1;
+  margin-left: 800px;
+  margin-top: 350px;
+  scale: 130%;
+}

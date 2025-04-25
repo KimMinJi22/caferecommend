@@ -1,0 +1,6 @@
+.slideimg{
+  width: 330px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+}
