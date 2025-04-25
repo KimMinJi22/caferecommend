@@ -21,6 +21,6 @@
 ![image](https://github.com/user-attachments/assets/e90fa345-0b69-4554-814d-cfcaf7869cab)
 
 각 카페별로 이미지를 클릭하면 해당 카페의 naver링크로 연결
-![image](https://github.com/user-attachments/assets/fa0fb2b2-6db2-40ec-9784-14efc7d897d0)
+![캡처](https://github.com/user-attachments/assets/5d548481-c8f6-4c2b-802f-fb23caf4d91f)
 ![image](https://github.com/user-attachments/assets/ac9ce0a6-6ed2-4fcc-8305-4df12415ce2a)
 
